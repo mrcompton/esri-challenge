@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import Header from '../components/Header'
 
 const Story = () => (
     <div className='main'>
 
         <div className='header'>
-            <Link href='/'><button>Home</button></Link>
+            {/* <Link href='/'><button>Home</button></Link> */}
+            <Header/>
             <h1>The Story of a Region</h1>
         </div>
         <div>
@@ -38,6 +40,7 @@ const Story = () => (
                 height: 400vh;
                 // width: 100vw;
                 display: flex;
+                margin-top: -8px;
                 flex-direction: column;
                 align-items: center;
             }

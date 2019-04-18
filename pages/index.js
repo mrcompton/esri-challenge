@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import Header from '../components/Header'
 
 const Index = () => (
 
     <div>
+        <Header/>
         <h1>Explore the Four Corners Region</h1>
-        <Link href='/story'><button>View Story Map</button></Link>
+        {/* <Link href='/story'><button>View Story Map</button></Link> */}
         <style jsx>
             {`
             div{
@@ -21,8 +23,6 @@ const Index = () => (
             }
             h1{
                 color: white;
-                position: absolute;
-                top: 80px;
                 font-family: Arial;
                 font-size: 70px;
             }

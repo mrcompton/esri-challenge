@@ -4,7 +4,7 @@ const mainStyle = {
 }
 
 const linkStyle = {
-    marginRight: 15,
+    margin: 15
 }
 
 const Header = () => (
@@ -17,12 +17,22 @@ const Header = () => (
         </Link>
         <style jsx>{`
         div{
-            background-color: black;
+            background-color: black;    
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 50px;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
         }
         a {
             font-family: 'Arial';
             text-decoration: none;
-            color: darkblue;
+            color: white;
+            font-size: 20px;
         }
 
         a:hover {

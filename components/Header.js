@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from './Links'
 const mainStyle = {
 
 }
@@ -9,11 +9,11 @@ const linkStyle = {
 
 const Header = () => (
     <div>
-        <Link href="/">
-            <a style={linkStyle}>Home</a>
+         <Link activeClassName='active' href='/'>
+          <a className='nav-link home-link'>Home</a>
         </Link>
-        <Link href="/story">
-            <a style={linkStyle}>Story Maps</a>
+        <Link activeClassName='active' href='/story'>
+          <a className='nav-link'>Story Map</a>
         </Link>
         <style jsx>{`
         div{
@@ -38,6 +38,15 @@ const Header = () => (
         a:hover {
             opacity: 0.6;
         }
+
+        .active {
+            color:  rgb(228, 158, 7);
+          }
+          .nav-link {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+          }
       `}</style>
     </div>
 )
